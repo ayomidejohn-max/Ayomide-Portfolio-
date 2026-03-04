@@ -4408,3 +4408,349 @@ ul, ol {
     outline: 2px solid var(--primary-color);
     outline-offset: 2px;
 }
+
+/* ==================== DARK MODE SUPPORT ==================== */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #e0e0e0;
+        --dark-color: #f5f5f5;
+        --white-color: #1a1a1a;
+        --light-color: #2a2a2a;
+        --border-color: #444;
+        --shadow-color: rgba(0, 0, 0, 0.3);
+    }
+
+    body {
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+    }
+
+    /* Navbar */
+    .navbar {
+        background-color: #222;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-links a {
+        color: #e0e0e0;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+        color: var(--primary-color);
+    }
+
+    /* Hero Section */
+    .hero {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    }
+
+    /* Light Background Sections */
+    .stats,
+    .services-preview,
+    .portfolio-filters,
+    .experience-section,
+    .soft-skills,
+    .why-contact,
+    .why-choose,
+    .response-time,
+    .process-section,
+    .why-me,
+    .testimonials-stats,
+    .faq-section,
+    .comparison-section,
+    .project-categories,
+    .what-you-get {
+        background-color: #2a2a2a !important;
+    }
+
+    /* Cards on dark backgrounds */
+    .stat-card,
+    .service-card,
+    .skill-card,
+    .soft-skill-card,
+    .goal-card,
+    .why-me-card,
+    .why-choose-card,
+    .why-contact-card,
+    .process-card,
+    .benefit-card,
+    .testimonial-card,
+    .portfolio-item,
+    .faq-item,
+    .category-card,
+    .step-card {
+        background-color: #1a1a1a !important;
+        border-color: #444 !important;
+    }
+
+    /* Text Colors */
+    h1, h2, h3, h4, h5, h6 {
+        color: #f5f5f5 !important;
+    }
+
+    p, span, a {
+        color: #e0e0e0 !important;
+    }
+
+    /* Specific sections */
+    .stat-card h3,
+    .service-card h3,
+    .skill-card h3,
+    .soft-skill-card h3,
+    .goal-card h3,
+    .why-me-card h3,
+    .why-choose-card h3,
+    .why-contact-card h3,
+    .process-card h3,
+    .benefit-card h3,
+    .testimonial-card h4 {
+        color: #f5f5f5 !important;
+    }
+
+    /* Secondary text in dark mode */
+    .section-subtitle,
+    .stat-card p,
+    .service-card p,
+    .skill-card p,
+    .soft-skill-card p,
+    .goal-card p,
+    .why-me-card p,
+    .why-choose-card p,
+    .why-contact-card p,
+    .process-card p,
+    .benefit-card p,
+    .price-info,
+    .testimonial-author p {
+        color: #b0b0b0 !important;
+    }
+
+    /* Links in dark mode */
+    a {
+        color: #4da3ff !important;
+    }
+
+    a:hover {
+        color: #80bfff !important;
+    }
+
+    /* Buttons */
+    .btn-primary {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+
+    .btn-secondary {
+        color: #4da3ff;
+        border-color: #4da3ff;
+    }
+
+    .btn-secondary:hover {
+        background-color: #4da3ff;
+        color: #1a1a1a;
+    }
+
+    /* Forms */
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+        background-color: #2a2a2a !important;
+        color: #e0e0e0 !important;
+        border-color: #444 !important;
+    }
+
+    .contact-form input:focus,
+    .contact-form select:focus,
+    .contact-form textarea:focus {
+        border-color: var(--primary-color) !important;
+        background-color: #333 !important;
+    }
+
+    /* Footer */
+    .footer {
+        background-color: #0a0a0a;
+        border-top: 1px solid #444;
+    }
+
+    .footer-section h4 {
+        color: #f5f5f5 !important;
+    }
+
+    .footer-section p,
+    .footer-section a,
+    .footer-section ul li {
+        color: #b0b0b0 !important;
+    }
+
+    .footer-section a:hover {
+        color: var(--primary-color) !important;
+    }
+
+    /* Page Header */
+    .page-header {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    }
+
+    /* Filter buttons */
+    .filter-btn {
+        background-color: #2a2a2a !important;
+        color: #e0e0e0 !important;
+        border-color: #444 !important;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        border-color: transparent !important;
+        color: white !important;
+    }
+
+    /* FAQ Items */
+    .faq-item {
+        background-color: #1a1a1a !important;
+        border: 1px solid #444 !important;
+    }
+
+    .faq-question {
+        background-color: #2a2a2a !important;
+        color: #e0e0e0 !important;
+    }
+
+    .faq-question:hover {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white !important;
+    }
+
+    .faq-item.active .faq-question {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white !important;
+    }
+
+    .faq-answer {
+        background-color: #1a1a1a !important;
+        border-top-color: #444 !important;
+        color: #e0e0e0 !important;
+    }
+
+    /* Timeline */
+    .timeline-content {
+        background-color: #2a2a2a !important;
+    }
+
+    .timeline-content h3 {
+        color: #f5f5f5 !important;
+    }
+
+    .timeline-content p {
+        color: #b0b0b0 !important;
+    }
+
+    /* Contact Info */
+    .contact-info {
+        background-color: #2a2a2a !important;
+    }
+
+    .contact-info h2 {
+        color: #f5f5f5 !important;
+    }
+
+    .contact-details h3 {
+        color: #f5f5f5 !important;
+    }
+
+    .contact-details a {
+        color: #4da3ff !important;
+    }
+
+    /* Table */
+    .comparison-table {
+        background-color: #1a1a1a !important;
+    }
+
+    .comparison-table thead {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    }
+
+    .comparison-table td {
+        border-bottom-color: #444 !important;
+        color: #e0e0e0 !important;
+    }
+
+    .comparison-table tbody tr:hover {
+        background-color: #2a2a2a !important;
+    }
+
+    /* Details/Summary */
+    details {
+        background-color: #2a2a2a !important;
+    }
+
+    details summary {
+        color: #e0e0e0 !important;
+    }
+
+    details[open] summary {
+        color: #4da3ff !important;
+    }
+
+    details p {
+        color: #b0b0b0 !important;
+    }
+
+    /* About Grid */
+    .about-image img {
+        border: 2px solid #444;
+    }
+
+    /* Skill Cards */
+    .skill-card:hover {
+        background-color: var(--primary-color) !important;
+        color: white !important;
+    }
+
+    .skill-card:hover h3,
+    .skill-card:hover p {
+        color: white !important;
+    }
+
+    /* Portfolio Items */
+    .portfolio-overlay {
+        background: linear-gradient(135deg, rgba(102, 126, 234, 0.95) 0%, rgba(118, 75, 162, 0.95) 100%) !important;
+    }
+
+    /* Service Detail */
+    .service-detail-item {
+        background-color: #2a2a2a !important;
+    }
+
+    /* Error Messages */
+    .error-message {
+        color: #ff6b6b !important;
+    }
+
+    /* Success Message */
+    .success-message {
+        background-color: #1a3a1a !important;
+        border-color: #28a745 !important;
+        color: #90ee90 !important;
+    }
+
+    .success-message h3,
+    .success-message p {
+        color: #90ee90 !important;
+    }
+
+    /* Pricing Box */
+    .service-pricing {
+        background: linear-gradient(135deg, #2a3a4a 0%, #1a2a3a 100%) !important;
+        border-left-color: var(--primary-color) !important;
+    }
+
+    .price-tag {
+        color: #e0e0e0 !important;
+    }
+
+    .price-tag strong {
+        color: #4da3ff !important;
+    }
+}

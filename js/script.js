@@ -294,17 +294,7 @@ function animateCounter(element, finalValue, suffix) {
     }, 30);
 }
 
-// ==================== SCROLL REVEAL FOR HERO ====================
-window.addEventListener('scroll', function() {
-    const heroContent = document.querySelector('.hero-content');
-    const heroImage = document.querySelector('.hero-image');
 
-    if (heroContent && heroImage) {
-        const scrollY = window.scrollY;
-        heroContent.style.opacity = Math.max(1 - scrollY / 500, 0);
-        heroImage.style.transform = `translateY(${scrollY * 0.5}px)`;
-    }
-});
 
 // ==================== LAZY LOADING IMAGES ====================
 document.addEventListener('DOMContentLoaded', function() {
